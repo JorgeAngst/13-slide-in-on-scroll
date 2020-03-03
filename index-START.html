@@ -61,11 +61,9 @@
     const sliderImages = document.querySelectorAll('.slide-in');
 
     function checkSlide(e) {
-      console.log(window.scrollY);
       // half way through the image
       sliderImages.forEach(sliderImage => {
         const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-        console.log(slideInAt);
       // bottom of the image
         const imageBottom = sliderImage.offsetTop + sliderImage.height;
         const isHalfShown = slideInAt > sliderImage.offsetTop;
